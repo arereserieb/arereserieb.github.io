@@ -6,52 +6,89 @@
         <script type="text/javascript" src="inc/TimeCircles.js"></script>
         <link rel="stylesheet" href="inc/TimeCircles.css" />
         <style>
-          body { 
-            background: url(tinyback.png) no-repeat center center fixed; 
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-}
+            body {
+                background: url(tinyback.png) no-repeat center center fixed; 
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;                
+            }
+            h2 {
+                margin-top: 50px;
+                margin-bottom: 50px; 
+                color: #ffffff;
+                text-align: center;                
+            }
+            .contador {
+                width: 80%;
+                margin: 0 auto;
+                display: block;
+                color: #ffffff;
+            }
         </style>
     </head>
     <body>
         <div class="container">
-        
-            <h2 style="color: #ffffff; text-align: center;">CONTADOR DE DIAS DO INCAIVEL INTERNACIONAL NA SERIE B</h2>
-            <div>
-                <div id="DateCountdown" data-date="2017-05-13 16:30:00" style="width: 100%; color: #ffffff;"></div>
-            </div>
+            <h2>CONTADOR DE DIAS DO INCAÍVEL INTERNACIONAL NA SERIE B</h2>
+            <div id="DateCountdown1" data-date="2017-05-13 16:30:00" class="contador"></div>
         </div>
         <script>
-         $("#DateCountdown").TimeCircles({
-    "animation": "ticks",
-    "bg_width": 1.3,
-    "fg_width": 0.10666666666666667,
-    "circle_bg_color": "#60686F",
-    "time": {
-        "Days": {
-            "text": "Dias",
-            "color": "#db110a",
-            "show": true
-        },
-        "Hours": {
-            "text": "Horas",
-            "color": "#ffa63d",
-            "show": true
-        },
-        "Minutes": {
-            "text": "Minutos",
-            "color": "#fff138",
-            "show": true
-        },
-        "Seconds": {
-            "text": "Segundos",
-            "color": "#ee2b2b",
-            "show": true
-        }
-    }
-});
+            $("#DateCountdown1").TimeCircles({
+                "animation": "ticks",
+                "bg_width": 1.3,
+                "fg_width": 0.10666666666666667,
+                "circle_bg_color": "#60686F",
+                "time": {
+                    "Days": {
+                        "text": "Dias",
+                        "color": "#de343f",
+                        "show": true
+                    },
+                    "Hours": {
+                        "text": "Horas",
+                        "color": "#fff",
+                        "show": true
+                    },
+                    "Minutes": {
+                        "text": "Minutos",
+                        "color": "#de343f",
+                        "show": true
+                    },
+                    "Seconds": {
+                        "text": "Segundos",
+                        "color": "#fff",
+                        "show": true
+                    }
+                }
+            });
+            $("#DateCountdown2").TimeCircles({
+                "animation": "ticks",
+                "bg_width": 1.3,
+                "fg_width": 0.10666666666666667,
+                "circle_bg_color": "#60686F",
+                "time": {
+                    "Days": {
+                        "text": "Dias",
+                        "color": "#de343f",
+                        "show": true
+                    },
+                    "Hours": {
+                        "text": "Horas",
+                        "color": "#fff",
+                        "show": true
+                    },
+                    "Minutes": {
+                        "text": "Minutos",
+                        "color": "#de343f",
+                        "show": true
+                    },
+                    "Seconds": {
+                        "text": "Segundos",
+                        "color": "#fff",
+                        "show": true
+                    }
+                }
+            });
         </script>       
     </body>
 </html>
